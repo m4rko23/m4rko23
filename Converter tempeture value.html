@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1>Converting Fahrenheit to Celsius</h1>
+	<p>Value of Farenheit:</p>
+	<input type="text" id="input">
+	<button id="buttOn">Click me</button>
+	<p id="value">Temperature in Celsius</p>
+
+<script>
+
+	document.getElementById("buttOn").onclick = function () {
+
+	var inptF = document.getElementById("input").value;
+
+	var inptC = ( 5 / 9 ) * (inptF - 32);
+	inptC = Math.floor(inptC)
+
+	document.getElementById("value").innerHTML = inptC + " °C";
+
+	}
+
+
+
+	
+
+	
+
+
+
+</script>
+
+
+</body>
+</html>
