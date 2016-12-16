@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="">
+</head>
+
+
+<body>
+ 	<h1>Guess number between  0 and 5</h1>
+	 <input id="text" type="text">
+ 	<button id="randomNumber">click to see!</button>
+	<h2 id="results"></h2>
+
+
+<script>
+
+	document.getElementById('randomNumber').onclick = function (){
+
+		var rn = Math.random();
+		rn = rn * 6
+		rn = Math.floor(rn);
+
+		if (document.getElementById("text").value == rn){
+
+			document.getElementById("results").innerHTML= "BRAVO...YOU GOT IT!!";
+		}
+
+		else {
+
+			document.getElementById("results").innerHTML= "TRY AGAIN... IMAGINE NUMBER WAS " + rn
+		}
+
+
+}
+	
+
+</script>
+
+
+
+
+
+</body>
+</html>
